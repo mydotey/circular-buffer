@@ -26,17 +26,17 @@ public abstract class TimeSequenceCircularBuffer<T extends TimeBucket> {
         _buckets = new Object[_bufferConfig.getBucketCount() + 1];
 
         for (int i = 0; i < _buckets.length; i++) {
-            _buckets[i] = createBucket(0, _bufferConfig.getTimeWindow());
+            _buckets[i] = newBucket(0, _bufferConfig.getTimeWindow());
         }
 
-        _spareBucket = createBucket(0, _bufferConfig.getTimeWindow());
+        _spareBucket = newBucket(0, _bufferConfig.getTimeWindow());
     }
 
     public TimeSequenceCircularBufferConfig getConfig() {
         return _bufferConfig;
     }
 
-    protected abstract T createBucket(long startTime, long ttl);
+    protected abstract T newBucket(long startTime, long ttl);
 
     protected void forEach(Consumer<T> consumer) {
         Objects.requireNonNull(consumer, "consumer is null");

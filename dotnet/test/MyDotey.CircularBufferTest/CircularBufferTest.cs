@@ -1,14 +1,3 @@
-# Circular Buffer
-
-## NuGet package
-
-```sh
-dotnet add package MyDotey.CircularBuffer -v 1.0.0
-```
-
-## Usage
-
-```cs
 using System;
 using System.Threading;
 using Xunit;
@@ -57,4 +46,3 @@ namespace MyDotey.Util
         }
     }
 }
-```

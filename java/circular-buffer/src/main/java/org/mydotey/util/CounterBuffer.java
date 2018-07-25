@@ -14,7 +14,7 @@ public class CounterBuffer<T> extends TimeSequenceCircularBuffer<CounterBucket<T
     }
 
     @Override
-    protected CounterBucket<T> createBucket(long startTime, long ttl) {
+    protected CounterBucket<T> newBucket(long startTime, long ttl) {
         return new CounterBucket<T>(startTime, ttl);
     }
 

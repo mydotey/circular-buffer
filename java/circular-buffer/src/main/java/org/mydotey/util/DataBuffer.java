@@ -20,7 +20,7 @@ public class DataBuffer<T> extends TimeSequenceCircularBuffer<DataBucket<T>> {
     }
 
     @Override
-    protected DataBucket<T> createBucket(long startTime, long ttl) {
+    protected DataBucket<T> newBucket(long startTime, long ttl) {
         return new DataBucket<T>(startTime, ttl, getConfig().getBucketCapacity());
     }
 
