@@ -15,11 +15,6 @@ using Xunit;
 
 namespace MyDotey.Util
 {
-    /**
-     * @author koqizhao
-     *
-     * Jul 25, 2018
-     */
     public class CircularBufferTest
     {
         [Fact]

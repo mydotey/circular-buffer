@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyTitle>MyDotey.CircularBuffer</AssemblyTitle>
+    <AssemblyName>MyDotey.CircularBuffer</AssemblyName>
+    <PackageId>MyDotey.CircularBuffer</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>koqizhao</Authors>
+    <Description>a time sequence circular buffer</Description>
+    <Copyright>koqizhao</Copyright>
+
+    <PackageTags>time sequence;circular buffer;ring buffer;circular;ring</PackageTags>
+    <PackageReleaseNotes>a time sequence circular buffer</PackageReleaseNotes>
+    <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/mydotey/circular-buffer</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mydotey/circular-buffer.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
